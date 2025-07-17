@@ -11,3 +11,154 @@
     margin: 0;
     padding: 0;
 }
+.flex{
+    display: flex;
+}
+.tittle{
+    font-size: 1.3rem;
+}
+.width{
+    width: 90%;
+    margin: 0 auto;
+}
+.width2{
+    width:80%;
+    margin: 0 auto;
+}
+.pera-color{
+    color: rgb(33, 33, 34);
+}
+.button-primery{
+    font-size: 1.10rem;
+    padding: 18px 25px;
+    background-color: #FF900E;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    
+}
+/* nav section design start */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding-bottom: 1.25rem;
+}
+nav{
+
+    justify-content: space-between;
+    padding: 28px 0;
+    align-items: center;
+}
+.nav-items{
+list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(33, 33, 34);
+}
+.banner-content{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.banner-text{
+    margin-bottom: 1rem;
+}
+.banner-heading{
+    font-size: 3rem;
+    padding: 20px 0;
+}
+.banner-img{
+    width: 100%;
+    border-radius: 0.75rem;
+}
+/* feature section design start */
+.feature-sec{
+    align-items: center;
+    margin-top: 4rem;
+    gap: 30px;
+}
+.feature-image{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+.feature-image img{
+   height: 15rem;
+   border-radius: .50rem;
+}
+.feature-heading{
+    font-size: 2rem;
+    padding: 0.50rem 0;   
+}
+.feature-para{
+    margin-bottom: 1rem;
+}
+.feature-heading span:nth-of-type(1) {
+  color: rgb(92, 91, 91);
+}
+.feature-heading span:nth-of-type(2) {
+  color: #f78401;
+}
+
+
+
+
+/* responsive design section start */
+@media screen and (max-width:576px) {
+nav{
+    flex-direction: column;
+    gap: 30px;
+}    
+.banner-content{
+    width: 90%;
+    margin: 0 auto; 
+}
+.feature-sec{
+flex-direction: column;
+width: 90%;
+margin-top: 1rem;
+}
+.feature-image{
+    grid-template-columns:1fr;
+    gap: 1;
+    width: 90%;
+}
+.feature-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+.feature-content{
+    width: 100%;
+}
+
+
+}
+/* for laptop */
+@media screen and (min-width:576px) and (max-width: 992px){
+.banner-content{
+    width: 90%;
+    margin: 0 auto; 
+}
+.feature-sec{
+flex-direction: column;
+width: 90%;
+}
+.feature-content{
+    width: 90%;
+}
+ .feature-image {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  .feature-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+
+}
