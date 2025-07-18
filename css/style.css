@@ -37,6 +37,16 @@
     border-radius: 10px;
     
 }
+.peragraph{
+    font-size: 1rem;
+    color: rgb(46, 46, 46);
+}
+.common-heading{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+
 /* nav section design start */
 header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -101,10 +111,88 @@ gap: 10px;
 .feature-heading span:nth-of-type(2) {
   color: #f78401;
 }
+/* enjoy section design start */
+.love-enjoy-sec, .fact-section{
+    margin-top: 4rem;
+    gap: 3rem;
+        
+}
+.love-enjoy-sec-photo img {
+    
+height: 700px;
+}
+.enjoy-heading{
+    font-size: 2rem;
+    color: rgb(24, 24, 24);
+    margin: 0.75rem 0rem;
+    border-left:5px solid #FF900E;
+    padding-left: 1rem;
+}
 
-
-
-
+.enjoy-card-header{
+    font-size: 1.30rem;
+    margin-bottom: 0.50rem;
+}
+.enjoys-sec-card{
+    margin: 1rem 0;
+    padding: 1rem ;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px 0px black;
+}
+#enjoy-button>span{
+    font-size: 3rem;
+}
+#enjoy-button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: -4rem 0 0 -2rem;
+}
+/* fact section design start */
+.fact-section-content{
+    width: 600px;
+}
+.fact-section-card{
+   margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4rem;
+}
+.cards{
+    padding: 2rem;
+    border:1px solid #f78401;
+    border-radius: 10px;
+    text-align: center;
+}
+/* sponser section start */
+.sponser-section{
+    text-align: center;
+    margin: 4rem auto;
+}
+.sponser-content{
+    margin:auto;
+    width: 550px;
+    
+}
+.sponser-item {
+    margin-top: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.sponser-item img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+.footer{
+    background-color: #FFF4E7;
+    padding: 1rem 0;
+    margin-bottom: 10rem;
+    border-radius: 0.50rem;
+    text-align: center;
+}
 /* responsive design section start */
 @media screen and (max-width:576px) {
 nav{
@@ -115,17 +203,19 @@ nav{
     width: 90%;
     margin: 0 auto; 
 }
-.feature-sec{
+.feature-sec, .love-enjoy-sec{
 flex-direction: column;
 width: 90%;
 margin-top: 1rem;
 }
-.feature-image{
+.feature-image, .fact-section-card{
     grid-template-columns:1fr;
-    gap: 1;
+    gap: 1rem;
     width: 90%;
+    margin:1rem auto;
 }
-.feature-image img {
+.feature-image img, .love-enjoy-sec-photo img {
+    width: 100%;
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
@@ -133,8 +223,22 @@ margin-top: 1rem;
 .feature-content{
     width: 100%;
 }
+#enjoy-button{
+    display: none;
+}
 
+.fact-section-content{
+    width: 80%;
+}
 
+.sponser-item{
+    grid-template-columns: 1fr;
+}
+.sponser-item img, .sponser-content{
+    width: 80%;
+    margin: auto;
+
+}
 }
 /* for laptop */
 @media screen and (min-width:576px) and (max-width: 992px){
@@ -154,11 +258,28 @@ width: 90%;
     gap: 1rem;
     width: 100%;
   }
-  .feature-image img {
+  .feature-image img, .love-enjoy-sec-photo img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
   }
+.love-enjoy-sec{
+ flex-direction: column;
+  align-items: center;  
+    
+}
+#enjoy-button{
+    display: none;
+}
+.fact-section-card{
+
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.fact-section-content{
+    width: 90%;
+}
 
 
 }
